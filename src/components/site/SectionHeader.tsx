@@ -1,5 +1,6 @@
-import type { ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
+
+type Action = { label: string; to: string };
 
 export function SectionHeader({
   eyebrow,
@@ -8,7 +9,7 @@ export function SectionHeader({
 }: {
   eyebrow?: string;
   title: string;
-  action?: { label: string; to: string } | ReactNode;
+  action?: Action;
 }) {
   return (
     <div className="flex items-end justify-between gap-6 mb-10 md:mb-12">
@@ -22,15 +23,13 @@ export function SectionHeader({
           {title}
         </h2>
       </div>
-      {action && typeof action === "object" && "to" in (action as { to?: string }) ? (
+      {action && (
         <Link
-          to={(action as { to: string; label: string }).to}
+          to={action.to}
           className="hidden md:inline text-sm font-medium text-ocean underline underline-offset-4 decoration-ocean/20 hover:decoration-ocean shrink-0"
         >
-          {(action as { to: string; label: string }).label}
+          {action.label}
         </Link>
-      ) : (
-        action
       )}
     </div>
   );
