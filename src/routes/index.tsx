@@ -35,7 +35,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Curated small-group journeys for solo women travelers — and for anyone traveling with intent, ages 8 to 80.",
+          "Curated small-group journeys for solo women travelers and anyone traveling with intent, ages 8 to 80. Verified safety, women-owned partners, worldwide.",
       },
       { property: "og:url", content: "/" },
     ],
