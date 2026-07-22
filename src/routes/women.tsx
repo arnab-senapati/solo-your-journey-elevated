@@ -5,7 +5,8 @@ import { SectionHeader } from "@/components/site/SectionHeader";
 import { PackageCard } from "@/components/site/PackageCard";
 import { SafetySection } from "@/components/site/SafetySection";
 import { womenPackagesQuery } from "@/lib/api/queries";
-import heroWomen from "@/assets/hero-women.jpg";
+import heroWomenAsset from "@/assets/dest-paris.webp.asset.json";
+const heroWomen = heroWomenAsset.url;
 
 export const Route = createFileRoute("/women")({
   head: () => ({
