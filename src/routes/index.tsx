@@ -61,10 +61,10 @@ function HomePage() {
       <Suspense>
         <HeroWrapper />
       </Suspense>
+      <Categories />
       <Destinations />
       <UpcomingTrips />
       <WomenSpecial />
-      <Categories />
       <FeaturedPackages />
       <SafetySection />
       <Testimonials />
@@ -147,7 +147,7 @@ function UpcomingTrips() {
                     {remaining} seats left
                   </span>
                   <span className="text-ocean/70 font-medium">
-                    ${pkg.priceFrom.toLocaleString()}
+                    ₹{pkg.priceFrom.toLocaleString()}
                   </span>
                 </div>
               </div>

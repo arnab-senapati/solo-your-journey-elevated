@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/SiteLayout";
-import heroWomenAsset from "@/assets/dest-paris.webp.asset.json";
-const heroWomen = heroWomenAsset.url;
+import { IMG } from "@/lib/api/_mock/images";
+const heroWomen = IMG.heroWomen;
 
 export const Route = createFileRoute("/about")({
   head: () => ({

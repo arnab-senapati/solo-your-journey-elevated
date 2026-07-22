@@ -1,7 +1,7 @@
 import { useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
 
-const budgets = ["Any", "Under $2k", "$2k–$4k", "$4k+"];
+const budgets = ["Any", "Under ₹1.5L", "₹1.5L–₹3L", "₹3L+"];
 const travelTypes = ["Any", "Adventure", "Wellness", "Cultural", "Leisure", "Pilgrimage"];
 const ageGroups = ["Any", "Students (8–18)", "Young adults", "Professionals", "Family", "Seniors (60+)"];
 

@@ -1,51 +1,29 @@
-// CDN-hosted image pointers for mock data.
-import paris from "@/assets/dest-paris.webp.asset.json";
-import amalfi from "@/assets/dest-amalfi.jpg.asset.json";
-import portofino from "@/assets/dest-portofino.webp.asset.json";
-import venice from "@/assets/dest-venice.webp.asset.json";
-import italianAlps from "@/assets/dest-italian-alps.webp.asset.json";
-import londonStreet from "@/assets/dest-london-street.jpg.asset.json";
-import polignano from "@/assets/dest-polignano.jpg.asset.json";
-import portofinoVilla from "@/assets/dest-portofino-villa.jpg.asset.json";
-import heroLondon from "@/assets/hero-london.webp.asset.json";
-import heroCoastalNight from "@/assets/hero-coastal-night.jpg.asset.json";
-import safetyPassport from "@/assets/safety-passport.jpg";
-
-// New semantic keys
-const paris_ = paris.url;
-const amalfi_ = amalfi.url;
-const portofino_ = portofino.url;
-const venice_ = venice.url;
-const italianAlps_ = italianAlps.url;
-const londonStreet_ = londonStreet.url;
-const polignano_ = polignano.url;
-const portofinoVilla_ = portofinoVilla.url;
-const heroLondon_ = heroLondon.url;
-const heroCoastalNight_ = heroCoastalNight.url;
-
 export const IMG = {
-  // New keys
-  paris: paris_,
-  amalfi: amalfi_,
-  portofino: portofino_,
-  venice: venice_,
-  italianAlps: italianAlps_,
-  londonStreet: londonStreet_,
-  polignano: polignano_,
-  portofinoVilla: portofinoVilla_,
-  heroLondon: heroLondon_,
-  heroCoastalNight: heroCoastalNight_,
-  // Legacy keys — remapped to closest new photo so existing mock data keeps working
-  chefchaouen: polignano_,
-  kyoto: venice_,
-  naxos: portofino_,
-  srilanka: italianAlps_,
-  himalayas: italianAlps_,
-  bali: portofinoVilla_,
-  iceland: amalfi_,
-  heroWomen: paris_,
-  heroStudents: londonStreet_,
-  heroProfessionals: heroLondon_,
-  heroSeniors: heroCoastalNight_,
-  safetyPassport,
+  // Hero / 16:9
+  paris: "/Assets/explore-solo.jpeg",
+  heroLondon: "/Assets/feriados-2026.jpeg",
+  amalfi: "/Assets/amalfi-hero.jpeg",
+  heroCoastalNight: "/Assets/d044f01dadb0c96aca5819d9d08ca795.jpg",
+  heroWomen: "/Assets/f951ecf1e762b1b0aa1de657852b1429.jpg",
+  
+  // Others / 9:16 (vertical)
+  portofino: "/Assets/b2b2db67fdf0301d0323fd88660d09f6.jpg",
+  venice: "/Assets/d2213a5cae529e57a4110907f44eebb4.jpg",
+  italianAlps: "/Assets/45bd16a25fd1fb342c0f56e09df7ef2c.webp",
+  londonStreet: "/Assets/1dc183a173179b9507b63a276dfb696e.jpg",
+  polignano: "/Assets/966e9d21264b79011699386bc797656d.jpg",
+  portofinoVilla: "/Assets/e1156bf6e5da6846c6f0bd73087125c0.jpg",
+  safetyPassport: "/Assets/e5df49ec27d07d44a96ae86944a5ca00.jpg",
+  
+  // Legacy keys mapping to other vertical images
+  chefchaouen: "/Assets/e714b89a16113ca080f9d8db376803cb.jpg",
+  kyoto: "/Assets/bf628fe584e19428e4b7a3fd36a49ad2.jpg",
+  naxos: "/Assets/0408593b1a0c9aa81de2fc156d52f16b.jpg",
+  srilanka: "/Assets/4a2ccdfe71561195eb36c900f1d157a7.jpg",
+  himalayas: "/Assets/49b421013cff464ab9d88466fbb0ff0e.webp",
+  bali: "/Assets/45fc5b52ad394546036e6a9c63059207.webp",
+  iceland: "/Assets/c64c5a83d025d6d6684fe7e8cc1d5e15.webp",
+  heroStudents: "/Assets/f75764b5b2dc5304227a5be34e20b980.webp",
+  heroProfessionals: "/Assets/a6442f3648036202e3767605a7b2a6c9.webp",
+  heroSeniors: "/Assets/be44382d8a95112ecec8a5944f6037e5.jpg",
 };

@@ -45,7 +45,7 @@ export function PackageCard({ pkg }: { pkg: Package }) {
             {pkg.rating.toFixed(1)}
           </div>
           <div className="text-sm font-medium text-ocean mt-1">
-            ${pkg.priceFrom.toLocaleString()}
+            ₹{pkg.priceFrom.toLocaleString()}
           </div>
         </div>
       </div>

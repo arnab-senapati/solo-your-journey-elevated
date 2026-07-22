@@ -15,7 +15,7 @@ const searchSchema = z.object({
   age: z.string().optional(),
 });
 
-export const Route = createFileRoute("/packages")({
+export const Route = createFileRoute("/packages/")({
   validateSearch: (s) => searchSchema.parse(s),
   head: () => ({
     meta: [
@@ -53,9 +53,9 @@ function PackagesPage() {
         if (!hay.includes(q.toLowerCase())) return false;
       }
       if (budget !== "Any") {
-        if (budget === "Under $2k" && p.priceFrom >= 2000) return false;
-        if (budget === "$2k–$4k" && (p.priceFrom < 2000 || p.priceFrom > 4000)) return false;
-        if (budget === "$4k+" && p.priceFrom < 4000) return false;
+        if (budget === "Under ₹1.5L" && p.priceFrom >= 150000) return false;
+        if (budget === "₹1.5L–₹3L" && (p.priceFrom < 150000 || p.priceFrom > 300000)) return false;
+        if (budget === "₹3L+" && p.priceFrom < 300000) return false;
       }
       if (type !== "Any" && p.travelType.toLowerCase() !== type.toLowerCase()) return false;
       if (age !== "Any") {
@@ -85,7 +85,7 @@ function PackagesPage() {
             </Filter>
             <Filter label="Budget">
               <select value={budget} onChange={(e) => setBudget(e.target.value)} className="w-full bg-transparent text-sm text-ocean focus:outline-none">
-                {["Any", "Under $2k", "$2k–$4k", "$4k+"].map((b) => <option key={b}>{b}</option>)}
+                {["Any", "Under ₹1.5L", "₹1.5L–₹3L", "₹3L+"].map((b) => <option key={b}>{b}</option>)}
               </select>
             </Filter>
             <Filter label="Travel type">

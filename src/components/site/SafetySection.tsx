@@ -1,5 +1,6 @@
 import { Shield, LifeBuoy, PhoneCall, BadgeCheck } from "lucide-react";
-import safetyPassport from "@/assets/safety-passport.jpg";
+import { IMG } from "@/lib/api/_mock/images";
+const safetyPassport = IMG.safetyPassport;
 
 const items = [
   {
