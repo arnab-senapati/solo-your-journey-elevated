@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/SiteLayout";
-import heroWomen from "@/assets/hero-women.jpg";
+import heroWomenAsset from "@/assets/dest-paris.webp.asset.json";
+const heroWomen = heroWomenAsset.url;
 
 export const Route = createFileRoute("/about")({
   head: () => ({
